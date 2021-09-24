@@ -1,0 +1,434 @@
+.timetable {
+    margin-top: 150px;
+    margin-bottom: 75px;
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn:hover {
+    background-color: #FACF91;
+}
+
+.catcher {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.node-down {
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.8rem;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    text-transform: uppercase;
+    font-weight: lighter;
+    color: #F36719;
+}
+
+.span-bold {
+    font-weight: bold;
+}
+
+
+.catcher > p {
+    font-size: 0.8rem;
+    font-family: 'Nunito', sans-serif;
+    text-transform: uppercase;
+    font-weight: lighter;
+    color: #F36719;
+}
+
+.catcher > h2 {
+    text-align: center;
+}
+
+.sections {
+    margin-top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sections > .sect {
+    display: flex;
+    border-radius: 3px;
+    justify-content: space-between;
+    flex-direction: row;
+    vertical-align: center;
+    align-items: center;
+    width: 33%;
+    padding: 0.8rem;
+    margin: 0 1rem 1rem;
+    background-color: white;
+    box-shadow: 0.15rem 0.15rem 0 0 #fadeca;
+}
+
+.jackpot-sect {
+    flex-direction: row !important;
+}
+
+.sections > .sect-center {
+    display: flex;
+    justify-content: center;
+}
+
+.buy-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
+    color: #F36719;
+}
+
+.sect > .time-left {
+    text-transform: uppercase;
+}
+
+#currAmount {
+    white-space: nowrap;
+    text-align: right;
+}
+
+.sections > .sect > span {
+    font-size: 0.8rem;
+}
+
+.winner-section {
+    height: 50%;
+    display: flex;
+    margin-left: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.winner-section > a {
+    margin: 0;
+}
+
+#winner-address-link {
+    font-size: 0.5rem;
+    color: #F36719;
+    opacity: 0.6;
+    font-family: 'Nunito', sans-serif;
+}
+
+.w-label {
+    text-decoration: none;
+    margin-left: 1rem;
+    padding-top: 0.2rem;
+}
+
+.get-coins-link {
+    text-underline: #604C45;
+}
+
+.current-jackpot {
+    display: flex;
+    justify-content: space-between;
+}
+
+#currAmount {
+    margin-left: 1rem;
+}
+
+
+.boldVals, .addressInputSection > .input-button-sec > h2 {
+    color: #F36719;
+    font-size: 0.8rem;
+    padding-left: 0.1rem;
+    font-weight: bold;
+    text-align: right;
+    font-family: 'MuseoModerno', sans-serif;
+}
+
+.no-p-m {
+    margin: 0 !important;
+    padding: 0 !important;;
+}
+
+.uppercaseVals {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    white-space: nowrap;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 0.2rem;
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
+    color: #F36719;
+}
+
+.abs {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+
+.date-separator {
+    display: flex;
+    font-weight: 100;
+    padding-right: 0.5rem;
+}
+
+.clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock > .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 0.1rem;
+}
+
+.sect > .clock > h2, #currAmount {
+    font-size: 1rem;
+}
+
+.clock > h2, .catcher > h2 {
+    font-family: 'MuseoModerno', sans-serif;
+    font-size: 0.6rem;
+    color: #F36719;
+}
+
+.background {
+    position: relative;
+    padding-bottom: 100px;
+    width: 100%;
+    background-color: #FFF8E0;
+}
+
+.addressInputSection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.inner-jackpot {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.value-jackpot {
+    height: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.minor-btn {
+    text-decoration: none;
+    font-family: 'MuseoModerno', sans-serif;
+    border-radius: 10px;
+    border: none;
+    text-transform: uppercase;
+    padding: 0.2rem;
+    font-size: 0.8rem;
+    background-color: #F36719;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.input-button-sec {
+    display: flex;
+    border-radius: 3px;
+    justify-content: center;
+    flex-direction: row;
+    vertical-align: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.btn {
+    font-family: 'MuseoModerno', sans-serif;
+    border-radius: 10px;
+    border: none;
+    padding: 0.7rem;
+    font-size: 0.8rem;
+    background-color: #F36719;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.addressInputSection > h2 {
+    font-size: 1rem;
+}
+
+#inputRes {
+    font-family: 'Nunito', sans-serif;
+    margin-top: 1.2rem;
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+    color: #F36719;
+}
+
+
+
+.status {
+    font-size: 0.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
+    color: #F36719;
+    margin-top: 1rem;
+}
+
+.input {
+    border-radius: 5px;
+    width: 500px;
+    border: none;
+    padding: 1.0rem;
+    color: #F36719;
+    font-size: 0.8rem;
+    background-color: white;
+    margin-right: 0.5rem;
+    box-shadow: 0.15rem 0.15rem 0 0 #fadeca;
+}
+
+input:focus {
+    outline: none;
+}
+
+.input::placeholder {
+    color: #f1b08c;
+    font-size: 0.8rem;
+    opacity: 1;
+}
+
+@keyframes borderAnimation {
+    from {
+        background-position: 0 0, -33.62px 0, 100% -33.62px, 0 100%;
+    }
+    to {
+        background-position: 0 -33.62px, 0 0, 100% 0, -33.62px 100%;
+    }
+}
+
+@media (max-width: 1600px) {
+    .timetable {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1024px) {
+    .timetable {
+        margin-top: 20px;
+        margin-bottom: 40px;
+        flex-direction: column;
+    }
+
+    .clock > h2, .timetable > .catcher > h2 {
+        font-size: 10vw;
+    }
+
+    .rocket-img, .loader {
+        display: none;
+    }
+
+    .value-jackpot {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .sections {
+        width: 100%;
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sections > .sect {
+        width: 400px;
+    }
+
+    .input-button-sec {
+        width: 400px;
+    }
+}
+
+.rocket-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+
+.loader {
+    left: -1000px;
+    top: 48px;
+    width: 1650px;
+    position: absolute;
+    border: 2px solid #f89b67;
+}
+
+.rocket-img {
+    width: 100px;
+    left: 650px;
+    top: 0;
+    position: absolute;
+    transform: rotate(45deg);
+}
+
+.lds-dual-ring {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+.lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 67%;
+    border: 6px solid #F36719;
+    border-color: #fc9e6d transparent #F36719 transparent;
+    animation: lds-dual-ring 0.8s linear infinite;
+}
+
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+#buttons02 .fab {
+    margin-left: 3px;
+    font-size: 14px;
+    vertical-align: middle;
+
+}
